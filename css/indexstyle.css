@@ -1,0 +1,66 @@
+#outer{
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+.container-fluid video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  -webkit-filter: brightness(0.30);
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+}
+
+.soar{
+  margin: auto;
+  font-family: 'Bungee Shade';
+  position: absolute;
+  color:#fff;
+  font-size: 17vw;
+  top: 20%;
+  left: 18%%;
+}
+
+.FAQs{
+  column-count: 2;
+  column-gap: 40px;
+   column-span: all;
+}
+
+.btn{
+  color:#fff;
+  font-size: 3vw;
+  border-color: #ffffff; 
+  text-decoration: none;
+  position: absolute;
+  top: 60%;
+  left: 43%;
+  font-weight: 700;
+  font-family: 'Righteous', sans-serif; 
+}
+
+.btn:hover {
+  color: white;
+}
+
+.cs{
+  font-family: 'Bungee Shade';
+}
+@media(max-width:770px){
+  .soar{
+    top: 40%;
+    left: 20%;
+  }
+  .btn{
+    top: 57%;
+  }
+}
